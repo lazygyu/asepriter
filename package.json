@@ -1,0 +1,10 @@
+{
+  "name": "asepriter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "lazygyu <lazygyu@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
+}
