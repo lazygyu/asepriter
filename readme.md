@@ -31,4 +31,4 @@ A library for loading and rendering animations exported by Aseprite.
 	* [x] update the frame number of the animation by time
 	* [x] get the current sprite of the animation
 * [ ] clone an Asepriter instance.
-* [ ] share sprite images among animations that have the same data
+* [x] share sprite images among animations that have the same data

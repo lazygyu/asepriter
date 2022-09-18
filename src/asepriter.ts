@@ -1,5 +1,6 @@
-import {AseJson, AsepriterEvent, Frame, TagDefinition} from "./types";
+import {AseJson, AsepriterEvent, Frame} from "./types";
 import {Animation} from './animation';
+import {SpriteCache} from "./sprite-cache";
 
 export class Asepriter {
 	private _loaded: boolean = false;
@@ -47,15 +48,20 @@ export class Asepriter {
 
 	private _loadFrames(frames: Frame[]) {
 		console.log('load frames');
-		this._sprites = frames.map((frm) => { return this._parseFrame(frm); });
+		this._sprites = frames.map((frm, idx) => { return this._parseFrame(frm, idx); });
 	}
 
-	private _parseFrame(frm: Frame) {
+	private _parseFrame(frm: Frame, frameNumber: number) {
+		const key = SpriteCache.getKey(this._json, this._image.src, frameNumber);
+		if (SpriteCache.has(key)) {
+			return SpriteCache.get(key)!;
+		}
 		const canv = document.createElement('canvas');
 		canv.width = frm.frame.w;
 		canv.height = frm.frame.h;
 		const ctx = canv.getContext('2d') as CanvasRenderingContext2D;
 		ctx.drawImage(this._image, frm.frame.x, frm.frame.y, frm.frame.w, frm.frame.h, 0, 0, frm.frame.w, frm.frame.h);
+		SpriteCache.put(key, canv);
 		return canv;
 	}
 
