@@ -30,5 +30,6 @@ A library for loading and rendering animations exported by Aseprite.
 	* [x] get an animation by a tag name
 	* [x] update the frame number of the animation by time
 	* [x] get the current sprite of the animation
-* [ ] clone an Asepriter instance.
+* [x] clone an Asepriter instance.
 * [x] share sprite images among animations that have the same data
+* [ ] emit 'done' event when an animation has ended

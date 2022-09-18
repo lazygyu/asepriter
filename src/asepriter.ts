@@ -124,4 +124,8 @@ export class Asepriter {
 		console.log(`emit ${eventName}`);
 		this._handlers[eventName]?.forEach(handler => handler());
 	}
+
+	public clone() {
+		return new Asepriter(this._json, this._image);
+	}
 }
