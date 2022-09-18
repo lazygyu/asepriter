@@ -5,6 +5,13 @@
   "author": "lazygyu <lazygyu@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "copy": "^0.3.2",
+    "parcel-bundler": "^1.12.5",
     "typescript": "^4.8.3"
+  },
+  "scripts": {
+    "copy-assets": "yarn copy example/assets/* dist/assets/ && yarn copy example/index.html dist/",
+    "serve-example": "parcel example/index.html",
+    "dev": "yarn copy-assets && yarn serve-example"
   }
 }

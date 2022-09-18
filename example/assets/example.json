@@ -1,0 +1,153 @@
+{ "frames": [
+   {
+    "filename": "kannaSprite 0.aseprite",
+    "frame": { "x": 0, "y": 0, "w": 20, "h": 25 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 25 },
+    "sourceSize": { "w": 20, "h": 25 },
+    "duration": 100
+   },
+   {
+    "filename": "kannaSprite 1.aseprite",
+    "frame": { "x": 20, "y": 0, "w": 20, "h": 25 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 25 },
+    "sourceSize": { "w": 20, "h": 25 },
+    "duration": 100
+   },
+   {
+    "filename": "kannaSprite 2.aseprite",
+    "frame": { "x": 40, "y": 0, "w": 20, "h": 25 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 25 },
+    "sourceSize": { "w": 20, "h": 25 },
+    "duration": 100
+   },
+   {
+    "filename": "kannaSprite 3.aseprite",
+    "frame": { "x": 60, "y": 0, "w": 20, "h": 25 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 25 },
+    "sourceSize": { "w": 20, "h": 25 },
+    "duration": 100
+   },
+   {
+    "filename": "kannaSprite 4.aseprite",
+    "frame": { "x": 0, "y": 0, "w": 20, "h": 25 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 25 },
+    "sourceSize": { "w": 20, "h": 25 },
+    "duration": 80
+   },
+   {
+    "filename": "kannaSprite 5.aseprite",
+    "frame": { "x": 80, "y": 0, "w": 20, "h": 25 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 25 },
+    "sourceSize": { "w": 20, "h": 25 },
+    "duration": 40
+   },
+   {
+    "filename": "kannaSprite 6.aseprite",
+    "frame": { "x": 100, "y": 0, "w": 20, "h": 25 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 25 },
+    "sourceSize": { "w": 20, "h": 25 },
+    "duration": 150
+   },
+   {
+    "filename": "kannaSprite 7.aseprite",
+    "frame": { "x": 120, "y": 0, "w": 20, "h": 25 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 25 },
+    "sourceSize": { "w": 20, "h": 25 },
+    "duration": 40
+   },
+   {
+    "filename": "kannaSprite 8.aseprite",
+    "frame": { "x": 140, "y": 0, "w": 20, "h": 25 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 25 },
+    "sourceSize": { "w": 20, "h": 25 },
+    "duration": 80
+   },
+   {
+    "filename": "kannaSprite 9.aseprite",
+    "frame": { "x": 160, "y": 0, "w": 20, "h": 25 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 25 },
+    "sourceSize": { "w": 20, "h": 25 },
+    "duration": 40
+   },
+   {
+    "filename": "kannaSprite 10.aseprite",
+    "frame": { "x": 180, "y": 0, "w": 20, "h": 25 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 25 },
+    "sourceSize": { "w": 20, "h": 25 },
+    "duration": 150
+   },
+   {
+    "filename": "kannaSprite 11.aseprite",
+    "frame": { "x": 200, "y": 0, "w": 20, "h": 25 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 25 },
+    "sourceSize": { "w": 20, "h": 25 },
+    "duration": 40
+   },
+   {
+    "filename": "kannaSprite 12.aseprite",
+    "frame": { "x": 220, "y": 0, "w": 20, "h": 25 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 25 },
+    "sourceSize": { "w": 20, "h": 25 },
+    "duration": 150
+   },
+   {
+    "filename": "kannaSprite 13.aseprite",
+    "frame": { "x": 240, "y": 0, "w": 20, "h": 25 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 25 },
+    "sourceSize": { "w": 20, "h": 25 },
+    "duration": 150
+   },
+   {
+    "filename": "kannaSprite 14.aseprite",
+    "frame": { "x": 260, "y": 0, "w": 20, "h": 25 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 20, "h": 25 },
+    "sourceSize": { "w": 20, "h": 25 },
+    "duration": 150
+   }
+ ],
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.2.40-x64",
+  "image": "example.png",
+  "format": "RGBA8888",
+  "size": { "w": 280, "h": 25 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "wait", "from": 0, "to": 3, "direction": "forward" },
+   { "name": "walk", "from": 4, "to": 11, "direction": "forward" },
+   { "name": "work", "from": 12, "to": 13, "direction": "forward" }
+  ],
+  "slices": [
+  ]
+ }
+}
