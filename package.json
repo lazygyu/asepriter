@@ -23,6 +23,6 @@
     "copy-assets": "yarn copy example/assets/* dist/assets/ && yarn copy example/index.html dist/",
     "serve-example": "parcel example/index.html",
     "dev": "yarn copy-assets && yarn serve-example",
-		"build": "tsc src/index.ts"
+		"build": "tsc -p ./tsconfig-build.json"
   }
 }
