@@ -7,8 +7,23 @@
 	<title>Document</title>
 	<script src="./index.ts" ></script>
 <style type="text/css">
+	html {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	canvas {
-		width: calc(32px * 4);
+		width: calc(40px * 4);
 		height: calc(32px * 4);
 		image-rendering: crisp-edges;
 		image-rendering: pixelated;
@@ -16,6 +31,7 @@
 </style>
 </head>
 <body>
-	<canvas id="exampleViewer" width="32" height="32"></canvas>
+	<canvas id="exampleViewer" width="40" height="32"></canvas>
+	<p>Press the space bar to change the animation</p>
 </body>
 </html>

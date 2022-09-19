@@ -1,12 +1,15 @@
 import type {Asepriter} from "./asepriter";
 import {Frame, TagDefinition} from "./types";
 
+type AnimationEvent = 'done';
+
 export class Animation {
 	private _elapsed: number = 0;
 	private _done: boolean = false;
 	public isLoop: boolean = false;
 	private _frameNumber: number = 0;
 	private _frames: (Frame & { image: CanvasImageSource })[] = [];
+	private _handlers: { [key in AnimationEvent]?: (() => void)[] } = {};
 
 	get isDone() {
 		return this._done;
@@ -45,6 +48,7 @@ export class Animation {
 			}
 			if (!this.isLoop && frame >= this._frames.length - 1) {
 				this._done = true;
+				this._emit('done');
 				break;
 			}
 		}
@@ -56,5 +60,18 @@ export class Animation {
 		this._elapsed = 0;
 		this._frameNumber = 0;
 		this._done = false;
+	}
+
+	public on(eventName: AnimationEvent, handler: () => void) {
+		if (!this._handlers[eventName]) {
+			this._handlers[eventName] = [];
+		}
+		this._handlers[eventName]!.push(handler);
+	}
+
+	private _emit(eventName: AnimationEvent) {
+		if (this._handlers[eventName]) {
+			this._handlers[eventName]!.forEach(handler => handler());
+		}
 	}
 }

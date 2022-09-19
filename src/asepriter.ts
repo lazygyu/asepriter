@@ -17,7 +17,7 @@ export class Asepriter {
 
 	constructor(json: AseJson, img: HTMLImageElement) {
 		console.log('create Asepriter', json, img);
-		this._json = json;
+		this._json = Object.assign({}, json);
 		this._image = img;
 
 		setTimeout(() => {
