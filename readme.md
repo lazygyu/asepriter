@@ -10,6 +10,46 @@ A library for loading and rendering animations exported by Aseprite.
 
 # Usage
 
+## Simple Usage
+
+```typescript
+import { Asepriter } from "asepriter";
+
+const jsonUrl = '/assets/animation.json';
+const imageUrl = '/assets/animation.png';
+
+(async () => {
+	const canvas = document.querySelector('#canv') as HTMLCanvasElement;
+	const instance = await Asepriter.create(jsonUrl, imageUrl);
+
+	let lastTimestamp = performance.now();
+	let deltaTime = 0;
+
+	const ctx = canvas.getContext('2d') as CanvasRenderingContext2D;
+	const render = (timestamp: number) => {
+
+		deltaTime = timestamp - lastTimestamp;
+		lastTimestamp = timestamp;
+
+		const animation = instance.getAnimation(instance.animationKeys[0]);
+		animation.update(deltaTime);
+
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		ctx.drawImage(animation.currentFrame.image, 0, 0);
+
+		requestAnimationFrame(render);
+	}
+
+	instance.on('load', () => {
+			render(performance.now());
+	});
+})();
+```
+
+## Other Usage
+
+See `example/index.ts`
+
 # Development
 
 ## check example code
