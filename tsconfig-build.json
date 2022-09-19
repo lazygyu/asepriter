@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "lib": ["es2016", "dom"],
+    "module": "system",
+    "declaration": true,
+    "outFile": "./dist/index.js",
+    "removeComments": true,
+		"emitBOM": false,
+		"composite": true,
+		"rootDirs": ["./src/"],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
+}

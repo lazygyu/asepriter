@@ -1,7 +1,8 @@
 {
   "name": "asepriter",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+	"types": "dist/index.d.ts",
   "author": "lazygyu <lazygyu@gmail.com>",
 	"description": "An library for using animations exported from Aseprite.",
   "license": "MIT",
@@ -10,9 +11,18 @@
     "parcel-bundler": "^1.12.5",
     "typescript": "^4.8.3"
   },
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lazygyu/asepriter.git"
+	},
+	"bugs": {
+		"url": "https://github.com/lazygyu/asepriter/issues"
+	},
+	"homepage": "https://github.com/lazygyu/asepriter",
   "scripts": {
     "copy-assets": "yarn copy example/assets/* dist/assets/ && yarn copy example/index.html dist/",
     "serve-example": "parcel example/index.html",
-    "dev": "yarn copy-assets && yarn serve-example"
+    "dev": "yarn copy-assets && yarn serve-example",
+		"build": "tsc src/index.ts"
   }
 }
