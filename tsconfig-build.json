@@ -2,16 +2,12 @@
   "compilerOptions": {
     "target": "es2016",
     "lib": ["es2016", "dom"],
-    "module": "system",
+    "module": "commonjs",
     "declaration": true,
-    "outFile": "./dist/index.js",
+		"outDir": "./dist/",
     "removeComments": true,
 		"emitBOM": false,
-		"composite": true,
-		"rootDirs": ["./src/"],
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
-  }
+    "strict": true
+  },
+	"include": ["./src/*.ts"]
 }
