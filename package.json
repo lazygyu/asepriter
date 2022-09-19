@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "lazygyu <lazygyu@gmail.com>",
+	"description": "An library for using animations exported from Aseprite.",
   "license": "MIT",
   "devDependencies": {
     "copy": "^0.3.2",

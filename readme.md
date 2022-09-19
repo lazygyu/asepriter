@@ -33,3 +33,4 @@ A library for loading and rendering animations exported by Aseprite.
 * [x] clone an Asepriter instance.
 * [x] share sprite images among animations that have the same data
 * [x] emit 'done' event when an animation has ended
+* [ ] build script
